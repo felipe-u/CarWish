@@ -6,7 +6,7 @@
       "use": "@vercel/static"
     }
   ],
-  "outputDirectory": "frontend/dist/frontend",
+  "outputDirectory": "dist/frontend",
   "rewrites": [
     {
       "source": "/(.*)",
