@@ -1,4 +1,9 @@
 {
-  "outputDirectory": "dist/frontend",
-  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+  "builds": [
+    {
+      "src": "frontend/dist/frontend/browser/**/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [{ "src": "/(.*)", "dest": "/index.html" }]
 }
