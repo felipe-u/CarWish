@@ -1,0 +1,36 @@
+<div class="title-container">
+  <h1>✨ Car wish ✨</h1>
+</div>
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>Brand</th>
+        <th>Model</th>
+        <th>Year</th>
+        <th>Value</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (car of cars(); track car) {
+      <tr>
+        <td>{{ car.brand }}</td>
+        <td>{{ car.model }}</td>
+        <td>{{ car.year }}</td>
+        <td>$ {{ car.value }}</td>
+        <td>
+          <button class="dltBtn" (click)="onDeleteCar(car._id)">Delete</button>
+        </td>
+      </tr>
+      }
+    </tbody>
+  </table>
+</div>
+<div class="btn-container">
+  <div class="btn-container2">
+    <button class="primaryBtn" (click)="onGenerateCar()">Generate</button>
+    <button class="primaryBtn">Count</button>
+    <button class="primaryBtn">Buy</button>
+  </div>
+</div>

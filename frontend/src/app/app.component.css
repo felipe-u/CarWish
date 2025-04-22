@@ -1,0 +1,94 @@
+.title-container {
+  display: flex;
+  width: 100%;
+  padding: 30px 0;
+}
+
+.title-container h1 {
+  margin: 0 auto;
+  font-size: 2.3em;
+  color: white;
+}
+
+.table-container {
+  margin: 20px 0;
+}
+
+.table-container table {
+  margin: 0 auto;
+  padding: 20px 0;
+  border-collapse: collapse;
+  width: 70%;
+}
+
+.table-container table th:nth-child(4),
+.table-container table td:nth-child(4) {
+  width: 25%;
+}
+
+.table-container table th:nth-child(5),
+.table-container table td:nth-child(5) {
+  width: 15%;
+}
+
+.table-container table thead {
+  background-color: gray;
+  color: black;
+}
+
+.table-container th,
+.table-container td {
+  padding: 10px 0;
+}
+
+.table-container table tbody {
+  color: black;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+.btn-container {
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.btn-container2 {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
+
+.dltBtn {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 2px;
+  width: 60px;
+  color: black;
+  font-weight: bold;
+  background-color: whitesmoke;
+}
+
+.dltBtn:hover {
+  transition: 0.3s ease;
+  cursor: pointer;
+  color: rgb(112, 13, 13);
+  border: 2px solid rgb(112, 13, 13);
+}
+
+.primaryBtn {
+  width: 100px;
+  height: 25px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(89, 94, 235);
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.primaryBtn:hover {
+  transition: 0.3s ease;
+  cursor: pointer;
+  background-color: rgb(216, 89, 235);
+}
